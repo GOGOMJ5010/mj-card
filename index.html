@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MJ Lee · BIGPIE C&amp;T</title>
+<meta name="description" content="MJ Lee, Sales Director, Overseas Sales at BIGPIE C&T Co., Ltd. Korean skincare OEM / ODM.">
+<meta name="theme-color" content="#101720">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+  :root{
+    --b900:#101720; --b300:#8A99AE; --b100:#DDE3EA;
+    --n000:#FFF; --n050:#F7F8F9; --n100:#EDEFF2; --n300:#C8CDD4;
+    --n500:#8B929C; --n700:#4A515B; --n900:#161B22; --ok:#2F8F63;
+    --ease:cubic-bezier(.22,.85,.2,1);
+    --lat:'Inter Tight','Helvetica Neue',Arial,sans-serif;
+    --ser:'Instrument Serif',Georgia,serif;
+    --kor:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo',sans-serif;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;min-width:0}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--lat);color:var(--n900);background:var(--n000);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6;overflow-x:clip}
+  html[lang=ko] body{font-family:var(--kor)}
+  h1,h2{margin:0;font-family:var(--ser);font-weight:400;line-height:.94;text-transform:uppercase;word-break:keep-all;text-wrap:balance}
+  h1 em,h2 em{font-style:italic;text-transform:none}
+  p{margin:0;word-break:keep-all;text-wrap:pretty}
+  .wrap{max-width:640px;margin:0 auto;padding:0 22px}
+  .eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--n500)}
+
+  .chrome{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;
+    padding:calc(18px + env(safe-area-inset-top)) 22px 0;pointer-events:none}
+  .chrome>*{pointer-events:auto}
+  .mk{font-family:var(--ser);font-size:18px;text-transform:uppercase;color:#fff;text-decoration:none;transition:color .4s}
+  .chrome.ink .mk{color:var(--n900)}
+  .lang{display:flex;gap:2px}
+  .lang button{border:0;background:none;font:400 10px var(--lat);letter-spacing:.2em;padding:6px 4px;cursor:pointer;color:rgba(255,255,255,.55)}
+  .lang button[aria-pressed=true]{color:#fff}
+  .chrome.ink .lang button{color:var(--n500)} .chrome.ink .lang button[aria-pressed=true]{color:var(--n900)}
+
+  .hero{min-height:92svh;background:radial-gradient(120% 80% at 80% 10%,#1E2A3A 0%,#101720 60%);color:#fff;display:flex;align-items:flex-end;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-12vw;top:12vh;width:62vw;max-width:420px;aspect-ratio:1/2.2;border-radius:48% 48% 18% 18%/22% 22% 10% 10%;
+    background:linear-gradient(160deg,rgba(255,255,255,.18),rgba(255,255,255,.02) 55%);border:1px solid rgba(255,255,255,.14)}
+  .hero .wrap{position:relative;z-index:1;padding-bottom:calc(52px + env(safe-area-inset-bottom));padding-top:110px;width:100%}
+  .hero .ov{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:20px}
+  .hero h1{font-size:clamp(48px,15vw,104px);line-height:.9}
+  .hero .who{margin-top:20px;font-family:var(--kor);font-size:clamp(15px,3.8vw,18px);font-weight:300;color:rgba(255,255,255,.8)}
+  .hero .role{margin-top:10px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+  .down{margin-top:34px;display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--n900);border-radius:999px;padding:7px 7px 7px 22px;
+    font:500 11px var(--lat);letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+  .down i{width:30px;height:30px;border-radius:50%;background:var(--n900);display:grid;place-items:center}
+  .down svg{width:13px;height:13px;color:#fff}
+
+  .mine{padding:96px 0 100px}
+  .mine h2,.yours h2{font-size:clamp(38px,11vw,64px);margin-top:18px}
+  .sub{margin-top:14px;font-family:var(--kor);font-size:14.5px;color:var(--n500)}
+  .rows{margin-top:32px;border-top:1px solid var(--n100)}
+  .row{display:flex;align-items:center;gap:15px;padding:15px 2px;border:0;border-bottom:1px solid var(--n100);background:none;width:100%;
+    text-decoration:none;color:inherit;font:inherit;text-align:left;cursor:pointer;min-height:64px}
+  .row:active{background:var(--n050)}
+  .ic{flex:none;width:22px;height:22px;color:var(--b300)} .ic svg{width:100%;height:100%}
+  .tx{flex:1}
+  .k{display:block;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--n500)}
+  .v{display:block;margin-top:3px;font-size:15.5px;word-break:break-word}
+  .ar{flex:none;width:14px;height:14px;color:var(--n300)}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:17px 26px;border-radius:999px;border:0;cursor:pointer;
+    font:500 15px var(--kor);text-decoration:none;width:100%}
+  .btn svg{width:17px;height:17px}
+  .pri{background:var(--n900);color:#fff;margin-top:26px}
+  .gho{background:#fff;color:var(--n900);box-shadow:inset 0 0 0 1px var(--n300);margin-top:10px}
+  .note{margin-top:12px;font-family:var(--kor);font-size:12.5px;color:var(--n500);text-align:center}
+
+  .yours{background:var(--b900);color:#fff;padding:96px 0 calc(96px + env(safe-area-inset-bottom))}
+  .yours .eyebrow{color:rgba(255,255,255,.45)}
+  .yours .sub{color:rgba(255,255,255,.6);line-height:1.75}
+  .shot{display:block;position:relative;margin-top:30px;aspect-ratio:1.72/1;border-radius:20px;border:1px dashed rgba(255,255,255,.3);
+    background:rgba(255,255,255,.04);overflow:hidden;cursor:pointer}
+  .shot .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,.6);font-family:var(--kor);font-size:13.5px}
+  .shot .ph svg{width:26px;height:26px}
+  .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#0b1118;display:none}
+  .shot.has img{display:block} .shot.has .ph{display:none}
+  .shot input{position:absolute;inset:0;opacity:0;cursor:pointer}
+  .ocr{display:none;margin-top:12px;padding:11px 14px;background:rgba(255,255,255,.06);border-radius:12px;font-family:var(--kor);font-size:12.5px;color:rgba(255,255,255,.75)}
+  .ocr.on{display:block}
+  .fields{margin-top:16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+  @media(max-width:520px){.fields{grid-template-columns:minmax(0,1fr)}}
+  .full{grid-column:1/-1}
+  .fields label{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0 0 8px 18px}
+  .fields input,.fields textarea{width:100%;padding:15px 18px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.05);
+    color:#fff;font:16px var(--kor);-webkit-appearance:none}
+  .fields textarea{min-height:96px;border-radius:20px;resize:vertical}
+  .fields input:focus,.fields textarea:focus{outline:none;border-color:rgba(255,255,255,.65)}
+  .bad input{border-color:#FFB4A2}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{font:13px var(--kor);padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:none;color:rgba(255,255,255,.85);cursor:pointer;min-height:44px}
+  .chip[aria-pressed=true]{background:#fff;color:var(--n900);border-color:#fff}
+  .consent{display:flex;gap:11px;align-items:flex-start;margin-top:18px;font-family:var(--kor);font-size:13px;line-height:1.6;color:rgba(255,255,255,.75)}
+  .consent input{width:20px;height:20px;flex:none;margin-top:1px;accent-color:#fff}
+  .err{display:none;margin-top:8px;font:12.5px var(--kor);color:#FFB4A2}
+  .yours .pri{background:#fff;color:var(--n900)}
+  .yours .pri[disabled]{opacity:.6}
+  .done{display:none;text-align:center;padding:30px 0 6px}
+  .done.on{display:block}
+  .tick{width:52px;height:52px;border-radius:50%;background:var(--ok);margin:0 auto 20px;display:grid;place-items:center}
+  .tick svg{width:24px;height:24px;color:#fff}
+  .done b{display:block;font:400 34px var(--ser);text-transform:uppercase}
+  .done p{margin-top:10px;font:14px var(--kor);color:rgba(255,255,255,.65)}
+  footer{background:var(--b900);color:rgba(255,255,255,.45);font-size:12px;line-height:1.8;padding:0 0 44px}
+  footer .rule{height:1px;background:rgba(255,255,255,.12);margin-bottom:24px}
+  footer a{color:rgba(255,255,255,.7)}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,12px);z-index:60;background:var(--n900);color:#fff;font:13px var(--kor);
+    padding:12px 20px;border-radius:10px;opacity:0;pointer-events:none;transition:.26s var(--ease);max-width:88vw;text-align:center}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+  :focus-visible{outline:2px solid var(--b300);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="chrome" id="chrome">
+  <a class="mk" href="#top">BIGPIE</a>
+  <div class="lang"><button data-l="en" aria-pressed="true">EN</button><button data-l="ko" aria-pressed="false">KO</button></div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="ov">BIGPIE C&amp;T CO., LTD.</p>
+    <h1>Measured<br><em>by hand.</em></h1>
+    <p class="who" data-en="MJ Lee · Sales Director, Overseas Sales" data-ko="이민재 · 해외영업팀 팀장">MJ Lee · Sales Director, Overseas Sales</p>
+    <p class="role" data-en="Korean skincare OEM / ODM" data-ko="한국 화장품 OEM · ODM">Korean skincare OEM / ODM</p>
+    <a class="down" href="#mine"><span data-en="My card" data-ko="내 명함">My card</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></i></a>
+  </div>
+</header>
+
+<section class="mine" id="mine">
+  <div class="wrap">
+    <p class="eyebrow">01 · My card</p>
+    <h2 data-en="My card." data-ko="제 명함입니다.">My card.</h2>
+    <p class="sub" data-en="Save my details in one tap." data-ko="한 번 눌러 연락처에 저장하세요.">Save my details in one tap.</p>
+
+    <div class="rows">
+      <a class="row" href="tel:+821042171136"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2.2z"/></svg></span><span class="tx"><span class="k">Mobile</span><span class="v">+82 10 4217 1136</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a class="row" href="mailto:sales@bigpiecnt.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 7 9 5.5L21 7"/></svg></span><span class="tx"><span class="k">E-mail</span><span class="v">sales@bigpiecnt.com</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a class="row" href="https://wa.me/821042171136" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.6a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-3.8-.9L3.2 21l1.9-5.6A8.4 8.4 0 0 1 4.2 11.6 8.4 8.4 0 0 1 12.6 3.2h.4a8.4 8.4 0 0 1 8 8v.4z"/></svg></span><span class="tx"><span class="k">WhatsApp</span><span class="v" data-en="Any hour, I'll reply" data-ko="시차 상관없이 편하게">Any hour, I'll reply</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a class="row" href="https://www.linkedin.com/in/minjae-lee-71709881" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 9.9h5.2V21H2.4zM9.9 9.9h5v1.5a5.5 5.5 0 0 1 4.5-2.1c3 0 4.6 1.9 4.6 5.6V21h-5.2v-5.3c0-1.5-.5-2.5-1.9-2.5-1.1 0-1.8.8-2.1 1.6-.1.3-.1.7-.1 1V21H9.9z"/></svg></span><span class="tx"><span class="k">LinkedIn</span><span class="v" data-en="Open profile" data-ko="프로필 열기">Open profile</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a class="row" href="https://www.bigpiecnt.co.kr" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.8 3.9 6 3.9 9.5s-1.3 6.7-3.9 9.5c-2.6-2.8-3.9-6-3.9-9.5s1.3-6.7 3.9-9.5z"/></svg></span><span class="tx"><span class="k">Company</span><span class="v">www.bigpiecnt.co.kr</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></a>
+      <a class="row" href="https://www.purynn.com" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M9 2.5h6v3l1.5 2v13a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-13l1.5-2z"/><path d="M7.5 11h9"/></svg></span><span class="tx"><span class="k" data-en="Our brand" data-ko="자사 브랜드">Our brand</span><span class="v">PURYNN · www.purynn.com</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg></a>
+      <button class="row" id="addr" type="button"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.8"/></svg></span><span class="tx"><span class="k" data-en="Office · Bucheon, Korea" data-ko="사무실 · 경기도 부천">Office · Bucheon, Korea</span><span class="v" data-en="122, Jomaru-ro 385beon-gil, Bucheon-si" data-ko="경기도 부천시 조마루로 385번길 122">122, Jomaru-ro 385beon-gil, Bucheon-si</span></span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+    </div>
+
+    <a class="btn pri" href="/mj-lee.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg><span data-en="Save to contacts" data-ko="연락처에 저장">Save to contacts</span></a>
+    <button class="btn gho" id="copy" type="button"><span data-en="Copy my details" data-ko="정보 복사">Copy my details</span></button>
+    <p class="note" data-en="On iPhone, tap “Create New Contact” after the file opens." data-ko="아이폰은 파일이 열리면 “새로운 연락처 생성”을 누르세요.">On iPhone, tap “Create New Contact” after the file opens.</p>
+  </div>
+</section>
+
+<section class="yours" id="yours">
+  <div class="wrap">
+    <p class="eyebrow">02 · Your card</p>
+    <h2 data-en="Your card." data-ko="명함을 주세요.">Your card.</h2>
+    <p class="sub" data-en="Snap your business card and I'll get back to you within one business day." data-ko="명함을 찍어 보내 주시면 영업일 기준 하루 안에 연락드리겠습니다.">Snap your business card and I'll get back to you within one business day.</p>
+
+    <form id="ex" action="https://formsubmit.co/sales@bigpiecnt.com" method="POST" enctype="multipart/form-data" novalidate>
+      <input type="hidden" name="_subject" value="Card exchange (digital card)">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" id="next" value="">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="interest" id="f-int" value="">
+
+      <label class="shot" id="shot">
+        <span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg><span data-en="Tap to photograph your card" data-ko="눌러서 명함 촬영">Tap to photograph your card</span></span>
+        <img id="shotImg" alt="">
+        <input type="file" name="attachment" id="shotIn" accept="image/*" capture="environment">
+      </label>
+      <div class="ocr" id="ocr"></div>
+
+      <div class="fields">
+        <div><label for="f-name" data-en="Name" data-ko="이름">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div><label for="f-co" data-en="Company" data-ko="회사">Company</label><input id="f-co" name="company" autocomplete="organization"></div>
+        <div><label for="f-mail" data-en="E-mail" data-ko="이메일">E-mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="f-tel" data-en="Phone / WhatsApp" data-ko="전화 / WhatsApp">Phone / WhatsApp</label><input id="f-tel" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="f-mkt" data-en="Market" data-ko="국가 / 시장">Market</label><input id="f-mkt" name="market" autocomplete="country-name"></div>
+        <div class="full"><label data-en="Interested in" data-ko="관심 분야">Interested in</label>
+          <div class="chips" id="chips">
+            <button type="button" class="chip" data-v="OEM / ODM" aria-pressed="false">OEM / ODM</button>
+            <button type="button" class="chip" data-v="PURYNN" aria-pressed="false">PURYNN</button>
+            <button type="button" class="chip" data-v="Wholesale" aria-pressed="false" data-en="Wholesale" data-ko="도매">Wholesale</button>
+            <button type="button" class="chip" data-v="Private label" aria-pressed="false" data-en="Private label" data-ko="자체 브랜드 제작">Private label</button>
+          </div></div>
+        <div class="full"><label for="f-note" data-en="Note" data-ko="메모">Note</label><textarea id="f-note" name="note"></textarea></div>
+      </div>
+
+      <label class="consent"><input type="checkbox" id="f-ok"><span data-en="I agree that BIGPIE C&amp;T may use these details to contact me about this inquiry." data-ko="문의 답변을 위해 빅파이씨앤티가 위 정보를 사용하는 데 동의합니다.">I agree that BIGPIE C&amp;T may use these details to contact me about this inquiry.</span></label>
+      <p class="err" id="err"></p>
+      <button class="btn pri" id="send" type="submit"><span data-en="Send my card" data-ko="명함 보내기">Send my card</span></button>
+    </form>
+
+    <div class="done" id="done">
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <b data-en="Thank you" data-ko="감사합니다">Thank you</b>
+      <p data-en="Your card reached me. I'll be in touch soon." data-ko="명함 잘 받았습니다. 곧 연락드리겠습니다.">Your card reached me. I'll be in touch soon.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><div class="rule"></div>BIGPIE C&amp;T CO., LTD. · Bucheon, Korea · <a href="https://www.bigpiecnt.co.kr">bigpiecnt.co.kr</a></div></footer>
+<div class="toast" id="toast"></div>
+
+<script>
+{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let lang='en';
+const PLAIN='MJ Lee (이민재)\nSales Director, Overseas Sales\nBIGPIE C&T CO., LTD.\n+82 10 4217 1136\nsales@bigpiecnt.com\nwww.bigpiecnt.co.kr';
+const ADDR={en:'122, Jomaru-ro 385beon-gil, Bucheon-si, Gyeonggi-do, Korea',ko:'경기도 부천시 조마루로 385번길 122'};
+
+function applyLang(l){
+  lang=l; document.documentElement.lang=l;
+  $$('[data-en]').forEach(e=>{e.textContent=e.dataset[l]||e.dataset.en});
+  $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.l===l)));
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+$$('.lang button').forEach(b=>b.addEventListener('click',()=>applyLang(b.dataset.l)));
+
+let tt; function toast(en,ko){const t=$('#toast');t.textContent=lang==='ko'?ko:en;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2600)}
+function copy(text,en,ko){
+  const ok=()=>toast(en,ko);
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(ok,fb)}else fb();
+  function fb(){const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+    try{document.execCommand('copy');ok()}catch(e){}ta.remove()}
+}
+$('#copy').addEventListener('click',()=>copy(PLAIN,'Details copied','정보를 복사했습니다'));
+$('#addr').addEventListener('click',()=>copy(ADDR[lang],'Address copied','주소를 복사했습니다'));
+
+/* chrome colour over the white section */
+const chrome=$('#chrome'), mine=$('#mine');
+function onScroll(){const r=mine.getBoundingClientRect();chrome.classList.toggle('ink',r.top<60&&r.bottom>60)}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+/* photo + OCR */
+let shotURL=null;
+$('#shotIn').addEventListener('change',e=>{
+  const f=e.target.files&&e.target.files[0]; if(!f) return;
+  if(shotURL) URL.revokeObjectURL(shotURL);
+  shotURL=URL.createObjectURL(f); $('#shotImg').src=shotURL; $('#shot').classList.add('has');
+  runOCR(f);
+});
+function ocrMsg(t){const b=$('#ocr');b.textContent=t;b.classList.add('on')}
+let tess=null;
+function loadTess(){ if(tess) return tess;
+  tess=new Promise((res,rej)=>{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
+    s.onload=()=>res(window.Tesseract);s.onerror=rej;document.head.appendChild(s)}); return tess }
+function runOCR(file){
+  ocrMsg(lang==='ko'?'명함을 읽는 중…':'Reading your card…');
+  loadTess().then(T=>T.recognize(file,'eng+kor',{logger:m=>{ if(m.status==='recognizing text') ocrMsg((lang==='ko'?'명함을 읽는 중… ':'Reading your card… ')+Math.round(m.progress*100)+'%')}}))
+  .then(r=>{const n=fill(parse((r&&r.data&&r.data.text)||''));
+    ocrMsg(n?(lang==='ko'?n+'개 항목을 채웠습니다. 확인해 주세요.':n+' fields filled. Please check them.'):(lang==='ko'?'읽지 못했습니다. 직접 입력해 주세요.':'Could not read it. Please type it in.'))})
+  .catch(()=>ocrMsg(lang==='ko'?'자동 입력을 못 했습니다. 직접 입력해 주세요.':'Auto-fill failed. Please type it in.'));
+}
+function parse(text){
+  const o={name:'',co:'',mail:'',tel:''}; if(!text) return o;
+  const lines=text.split(/\r?\n/).map(l=>l.replace(/[|_~^\x60]+/g,' ').replace(/\s{2,}/g,' ').trim()).filter(l=>l.length>1);
+  const m=text.match(/[\w.+-]+@[\w-]+\.[\w.-]{2,}/); if(m) o.mail=m[0].replace(/[.,;]$/,'');
+  const telLine=lines.find(l=>/(tel|phone|mobile|cell|^m[\s.:]|^t[\s.:]|휴대|전화)/i.test(l)&&/\d{6,}/.test(l.replace(/\D/g,'')));
+  const tm=(telLine||text).match(/\+?\d[\d\s().-]{7,17}\d/); if(tm) o.tel=tm[0].replace(/[().]/g,'').trim();
+  const coRe=/(co\.,?\s?ltd|inc\.?|llc|gmbh|corp|company|pte|s\.a\.|주식회사|\(주\)|㈜)/i;
+  const tiRe=/(director|manager|ceo|cto|president|head of|sales|purchas|marketing|founder|buyer|팀장|대표|이사|부장|과장|차장|매니저)/i;
+  let title=''; lines.forEach(l=>{ if(!o.co&&coRe.test(l)) o.co=l; if(!title&&tiRe.test(l)&&l.length<44) title=l });
+  const ti=lines.indexOf(title);
+  const cand=lines.filter(l=>l!==o.co&&l!==title&&!/[@\d]/.test(l)&&l.length<=26&&l.split(/\s+/).length<=4);
+  o.name=(ti>0&&cand.includes(lines[ti-1]))?lines[ti-1]:(cand[0]||''); return o;
+}
+function fill(d){let n=0;[['#f-name',d.name],['#f-co',d.co],['#f-mail',d.mail],['#f-tel',d.tel]].forEach(([s,v])=>{if(v&&!$(s).value){$(s).value=v;n++}});return n}
+
+const interest=new Set();
+$$('#chips .chip').forEach(c=>c.addEventListener('click',()=>{
+  const on=c.getAttribute('aria-pressed')==='true'; c.setAttribute('aria-pressed',String(!on));
+  on?interest.delete(c.dataset.v):interest.add(c.dataset.v); $('#f-int').value=[...interest].join(', ');
+}));
+
+/* submit: real POST to the form service, returns to this page with ?sent=1 */
+$('#next').value=location.origin+location.pathname+'?sent=1#yours';
+$('#ex').addEventListener('submit',e=>{
+  const name=$('#f-name'), mail=$('#f-mail'); let msg='';
+  name.parentElement.classList.toggle('bad',!name.value.trim());
+  const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail.value.trim()); mail.parentElement.classList.toggle('bad',!okMail);
+  if(!name.value.trim()||!okMail) msg=lang==='ko'?'이름과 이메일을 확인해 주세요.':'Please check your name and e-mail.';
+  else if(!$('#f-ok').checked) msg=lang==='ko'?'동의에 체크해 주세요.':'Please tick the consent box.';
+  const err=$('#err'); err.textContent=msg; err.style.display=msg?'block':'none';
+  if(msg){e.preventDefault();return}
+  $('#send').disabled=true;
+});
+
+try{ const s=localStorage.getItem('lang'); applyLang(s==='ko'?'ko':'en') }catch(e){ applyLang('en') }
+if(new URLSearchParams(location.search).get('sent')==='1'){ $('#ex').style.display='none'; $('#done').classList.add('on'); setTimeout(()=>$('#done').scrollIntoView({block:'center'}),200) }
+}
+</script>
+</body>
+</html>
